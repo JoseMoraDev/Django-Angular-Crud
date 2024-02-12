@@ -1,0 +1,44 @@
+DJANGO
+
+    python -m venv venv
+    source venv/Scripts/activate
+
+    pip install django
+    pip install djangorestframework
+    pip install mysqlclient
+    pip install PyJWT
+    pip install django-cors-headers
+
+    django-admin startproject auth
+    cd auth
+    django-admin startapp users
+
+    python manage.py runserver
+
+    define user model in the ORM
+    python manage.py makemigrations
+    python manage.py migrate
+
+    Postman
+        localhost:8000/api/register/
+        POST
+        body
+        {
+            "name": "a",
+            "email": "a@a.com",
+            "password": "a"
+        }
+
+
+
+ANGULAR
+
+     ng new angular-auth
+     copy-paste bootstrap CDN
+     cd angular-auth
+     ng serve
+
+     ng g c register
+     ng g c nav
+     ng g c home
+     ng g c login
