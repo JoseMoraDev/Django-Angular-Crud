@@ -75,10 +75,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'yt_django_auth',
-        'USER': 'root',
-        #!! 'USER': 'yourUserHere',
-        'PASSWORD': 'kali'
-        #!! 'PASSWORD': 'yourPassHere'
+        'USER': 'yourUserHere',
+        'PASSWORD': 'yourPassHere'
     }
 }
 
@@ -107,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
